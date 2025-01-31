@@ -40,7 +40,5 @@ export interface IProjectInfo {
 }
 
 export interface IProjects {
-    info: {
-        [key: number]: IProjectInfo
-    }
+    [key: number]: IProjectInfo
 }

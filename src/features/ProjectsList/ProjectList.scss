@@ -28,12 +28,25 @@ body {
   }
 }
 
+.delete_prj_button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 10px;
+}
+
+.projects_content {
+  position: relative;
+}
+
 .projects_list_down select {
   border: var(--border-blue);
 }
 
-.projects_list_down a, .projects_list_down span {
-  padding: 3px;
+.projects_list_down a, .projects_list_down span, .projects_list_down select {
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
 }
 
 .projects_list_top {
@@ -53,6 +66,7 @@ body {
 
 .projects_list_down {
   display: flex;
+  flex-direction: column;
   & input {
     max-width: unset;
     height: 20px;
@@ -60,9 +74,13 @@ body {
   }
 }
 
+.projects_list_down > div {
+  display: flex;
+}
+
 .projects_list_top > .table_checkbox {
-  height: 32px;
-  width: 54px;
+  min-width: 32px;
+  min-height: 32px;
 }
 
 .table_checkbox {
@@ -97,14 +115,21 @@ body {
 
 .table_name {
   width: 100%;
+  min-width: 140px;
+  flex: 1;
+  text-align: start;
 }
 
 .table_status {
   max-width: 300px;
+  min-width: 110px;
   width: 100%;
+  flex: 1;
 }
 
 .table_creator {
   max-width: 300px;
+  min-width: 120px;
   width: 100%;
+  flex: 1;
 }

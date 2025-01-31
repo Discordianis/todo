@@ -6,3 +6,4 @@ const rootReducers = combineReducers({
 })
 
 export const store = createStore(rootReducers)
+export type RootState = ReturnType<typeof store.getState>
