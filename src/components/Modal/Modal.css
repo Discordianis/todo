@@ -1,0 +1,26 @@
+dialog {
+  position: absolute;
+}
+dialog::backdrop {
+  backdrop-filter: blur(6px);
+}
+
+.modal_root {
+  margin: auto;
+  border: var(--border-blue);
+  border-radius: 8px;
+  min-width: 45%;
+  max-width: 70%;
+}
+
+.modal_content {
+  padding: 10px;
+}
+
+.modal_button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/*# sourceMappingURL=Modal.css.map */

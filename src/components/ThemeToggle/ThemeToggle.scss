@@ -1,0 +1,56 @@
+body.light-theme {
+  background-color: var(--light-body-bg);
+  color: var(--light-text);
+
+  & button {
+    background-color: var(--light-button-bg);
+    color: var(--light-text);
+  }
+  & dialog, select {
+    background-color: var(--light-block-bg);
+    color: var(--light-text);
+  }
+  & a {
+    color: var(--light-link-color);
+  }
+  & span, p, h1, h2, h3, h4 {
+    color: var(--light-text);
+  }
+  & input {
+    background-color: var(--light-input-bg);
+    color: var(--light-text);
+  }
+}
+
+body.dark-theme {
+  background-color: var(--dark-body-bg);
+  color: var(--dark-text);
+
+  & button {
+    background-color: var(--dark-button-bg);
+    color: var(--dark-text);
+  }
+  & dialog, select {
+    background-color: var(--dark-block-bg);
+    color: var(--dark-text);
+  }
+  & a {
+    color: var(--dark-link-color);
+  }
+  & span, p, h1, h2, h3, h4 {
+    color: var(--dark-text);
+  }
+  & input {
+    background-color: var(--dark-input-bg);
+    color: var(--dark-text);
+  }
+}
+
+* {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.dark-button img {
+  filter: brightness(10);
+}
+

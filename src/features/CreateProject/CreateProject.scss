@@ -1,0 +1,17 @@
+.projects_create {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 10px;
+}
+
+.project_create_modal {
+  & input {
+    max-width: unset;
+  }
+}
+
+.project_createBtn_modal {
+  margin-top: 5px;
+  display: flex;
+  justify-content: end;
+}

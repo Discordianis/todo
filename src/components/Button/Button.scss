@@ -1,0 +1,12 @@
+.button {
+  border: transparent 1px solid;
+  transition: border 0.2s ease-in-out;
+}
+
+.button:hover {
+  border: var(--border-blue);
+}
+
+.button:focus {
+  outline: none;
+}

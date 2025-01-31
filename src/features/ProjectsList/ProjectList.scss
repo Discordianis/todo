@@ -1,0 +1,110 @@
+.projects_list_table {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+body {
+  &.light-theme .projects_list_table {
+    background-color: var(--light-block-bg);
+  }
+  &.dark-theme .projects_list_table {
+    background-color: var(--dark-block-bg);
+  }
+}
+
+.projects_list_top, .projects_list_down a, .projects_list_down span {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex: 1;
+
+  & span {
+    border: var(--border-blue);
+    text-align: start;
+    padding: 3px;
+  }
+}
+
+.projects_list_down select {
+  border: var(--border-blue);
+}
+
+.projects_list_down a, .projects_list_down span {
+  padding: 3px;
+}
+
+.projects_list_top {
+  & .table_name, .table_status, .table_creator {
+    font-weight: bold;
+  }
+}
+.projects_list_down_sub {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  & a, div, span {
+    border: var(--border-blue);
+  }
+}
+
+.projects_list_down {
+  display: flex;
+  & input {
+    max-width: unset;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.projects_list_top > .table_checkbox {
+  height: 32px;
+  width: 54px;
+}
+
+.table_checkbox {
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border-blue);
+}
+
+body {
+  &.light-theme {
+    & .table_name:hover {
+      background-color: var(--light-block-bg-hover);
+      cursor: pointer;
+    }
+    & select:hover {
+      background-color: var(--light-block-bg-hover);
+    }
+  }
+  &.dark-theme {
+    & .table_name:hover {
+      background-color: var(--dark-block-bg-hover);
+      cursor: pointer;
+    }
+    & select:hover {
+      background-color: var(--dark-block-bg-hover);
+    }
+  }
+}
+
+
+.table_name {
+  width: 100%;
+}
+
+.table_status {
+  max-width: 300px;
+  width: 100%;
+}
+
+.table_creator {
+  max-width: 300px;
+  width: 100%;
+}

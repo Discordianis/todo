@@ -1,0 +1,26 @@
+.header_root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.header_logo {
+  display: flex;
+}
+.header_logo img {
+  width: 150px;
+  height: auto;
+}
+
+body.light-theme header {
+  margin-bottom: 10px;
+  background-color: var(--light-block-bg);
+}
+body.dark-theme header {
+  margin-bottom: 10px;
+  background-color: var(--dark-block-bg);
+}
+
+/*# sourceMappingURL=Header.css.map */
